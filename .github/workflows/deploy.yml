@@ -40,7 +40,7 @@ jobs:
         run: pnpm install -g @dist0rtion/thc
 
       - name: Build game
-        run: thc build game
+        run: ETHEREUM_ENDPOINT=${{ secrets.ETHEREUM_ENDPOINT }} thc build game
 
       - name: Provide dapp
         run: thc provide-dapp game thc/web
