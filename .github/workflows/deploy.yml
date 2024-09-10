@@ -74,3 +74,6 @@ jobs:
           git add .
           git commit -m "Bump"
           git push origin main
+
+      - name: Update root hash
+        run: ETHEREUM_ENDPOINT=${{ secrets.ETHEREUM_ENDPOINT }} PRIVATE_KEY=${{ secrets.PRIVATE_KEY }} thc set-root-hash game
