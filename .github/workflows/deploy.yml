@@ -45,7 +45,11 @@ jobs:
       - name: Provide dapp
         run: ETHEREUM_ENDPOINT=${{ secrets.ETHEREUM_ENDPOINT }} thc provide-dapp game thc/web
 
-      - name: Install THC (as in Treasure Hunt Code) dependencies
+      - name: Install THC (as in Treasure Hunt Code) lib deps
+        working-directory: thc/lib
+        run: pnpm install
+
+      - name: Install THC (as in Treasure Hunt Code) web deps
         working-directory: thc/web
         run: pnpm install
 
