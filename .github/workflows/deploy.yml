@@ -43,7 +43,7 @@ jobs:
         run: ETHEREUM_ENDPOINT=${{ secrets.ETHEREUM_ENDPOINT }} thc build game
 
       - name: Provide dapp
-        run: thc provide-dapp game thc/web
+        run: ETHEREUM_ENDPOINT=${{ secrets.ETHEREUM_ENDPOINT }} thc provide-dapp game thc/web
 
       - name: Install THC (as in Treasure Hunt Code) dependencies
         working-directory: thc/web
