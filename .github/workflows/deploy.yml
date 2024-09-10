@@ -34,6 +34,7 @@ jobs:
         with:
           node-version: 20
           cache: "pnpm"
+          cache-dependency-path: "thc"
 
       - name: Install THC (as in Treasure Hunt CLI)
         run: pnpm install -g @dist0rtion/thc
