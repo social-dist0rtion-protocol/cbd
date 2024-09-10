@@ -66,9 +66,9 @@ jobs:
 
       - name: Deploy to Target Repo
         run: |
-          git clone git@github.com:${{ secrets.TARGET_REPO }}.git public
-          cp -R dist/* public/
-          cd public
+          git clone git@github.com:${{ secrets.TARGET_REPO }}.git target
+          cp -R thc/web/dist/* target/
+          cd target
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
