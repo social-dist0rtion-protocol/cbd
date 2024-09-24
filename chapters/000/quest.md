@@ -10,7 +10,7 @@ Times are dark, like the clouds covering the sky. The only escape path to this f
 </details>
 
 <details>
-  <summary>Side Quest: Something</summary>
+  <summary>Side Quest: supercazzola</summary>
 
 **Something small enough to escape casual notice.**
 
