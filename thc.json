@@ -2,7 +2,7 @@
   "name": "CBD (as in Cloud-Based Demo)",
   "mapUrl": "https://www.openstreetmap.org/search?query=berlin#map=11/52.5072/13.4248",
   "helpUrl": "https://github.com/social-dist0rtion-protocol/thc-demo/issues",
-  "cname": "thc-demo.dist0rtion.com",
+  "cname": "cbd.dist0rtion.com",
   "thcAddress": "0x487837e29e770B7D569a91848b6dD36eA1Ed6c04",
   "chainId": 11155111
 }
