@@ -40,10 +40,10 @@ jobs:
         run: pnpm install -g @dist0rtion/thc
 
       - name: Build game
-        run: ETHEREUM_ENDPOINT=${{ secrets.ETHEREUM_ENDPOINT }} thc build game
+        run: ETHEREUM_ENDPOINT=${{ secrets.ETHEREUM_ENDPOINT }} PRIVATE_KEY=${{ secrets.PRIVATE_KEY }} thc build game
 
       - name: Provide dapp
-        run: ETHEREUM_ENDPOINT=${{ secrets.ETHEREUM_ENDPOINT }} thc provide-dapp game thc/web
+        run: ETHEREUM_ENDPOINT=${{ secrets.ETHEREUM_ENDPOINT }} PRIVATE_KEY=${{ secrets.PRIVATE_KEY }} thc provide-dapp game thc/web
 
       - name: Install THC (as in Treasure Hunt Code) lib deps
         working-directory: thc/lib
