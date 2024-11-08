@@ -35,7 +35,7 @@ Add these secrets in your GitHub repository settings under **Settings > Secrets 
 #### 5. `DEPLOYER_SSH_KEY`
 
 - **Description**: SSH private key for deploying the build to the target repository.
-- **Format**: The private key content as a single line.
+- **Format**: The private key content.
 - **Generate**: `ssh-keygen -t ed25519 -C "deployer" -f github_actions_deploy_key`
 
 #### 6. `TARGET_REPO`
