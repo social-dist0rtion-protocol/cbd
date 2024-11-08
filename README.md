@@ -37,6 +37,7 @@ Add these secrets in your GitHub repository settings under **Settings > Secrets 
 - **Description**: SSH private key for deploying the build to the target repository.
 - **Format**: The private key content.
 - **Generate**: `ssh-keygen -t ed25519 -C "deployer" -f github_actions_deploy_key`
+- **IMPORTANT**: After generating the key, add the public key (`github_actions_deploy_key.pub`) to the “Deploy Keys” section of the target repository (found in Settings > Deploy keys). This grants GitHub Actions permission to deploy changes to the target repository.
 
 #### 6. `TARGET_REPO`
 
